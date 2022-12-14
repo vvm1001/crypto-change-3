@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DayInTrade</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./assets/css/libs/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./assets/css/libs/animate.min.css">
+    <link rel="stylesheet" href="./assets/css/libs/fonts.css">
+    <link rel='stylesheet' href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/checkbox.css">
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+    <link rel="stylesheet" href="./assets/css/libs/select.css">
+    
+</head>
+<body>
+    
+    <div id="ex1" class="modal">
+        <p>Пункты правил</p>
+        <p>1. Общие положения</p>
+        <p>2. Предмет Соглашения</p>
+        <p>3. Взаимные обязательства Сторон</p>
+        <p>4. Предоставляемые услуги</p>
+        <p>5. Регламент совершения обменных операций</p>
+        <p>6. Ответственность Сторон и гарантии Онлайн-сервиса</p>
+        <p>7. Порядок изменения условий работы</p>
+        <p>8. Непредвиденные обстоятельства</p>
+        <p>9. Порядок совершения обменных операций</p>
+        <br>
+        <p>1. Общие положения</p>
+        <p>1.1. Этим Соглашением устанавливаются особенности предоставления Онлайн-сервисом обменных услуг.</p>
+        <p>1.2. Принимая и соглашаясь с условиями обслуживания и подтверждением регистрации Пользователя сервисом DayInTrade, осуществляется предоставление услуг, связанных с обменом, покупкой или продажей электронных денежных средств, предоставленных Сервисом dayintrade.com</p>
+        <p>1.3. К Пользователям причисляют частных лиц и организации(й), выразивших согласие на сотрудничество с Онлайн-сервисом.</p>
+        <p>1.4. При общем упоминании Пользователь и Онлайн-ресурс называются Сторонами.</p>
+        <p>1.5. Стороны согласны, что это электронное Соглашение, обладает равной силой с письменным договором и призвано урегулировать их отношения в процессе потребления услуг обмена.</p>
+        <p>1.6. Соглашение считается публичной офертой, акцепт которой происходит путем оформления Пользователем заявки для получения услуг, оказываемых Онлайн-сервисом. Заявка подается через веб-ресурс DayInTrade.com</p>
+        <br>
+        <p>2. Предмет Соглашения</p>
+        <p>2.1. Онлайн-ресурс dayintrade.com предоставляет услуги, перечень которых указан в п. 4 Соглашения, но Пользователь обязан следовать стандартам, изложенным в п. 9. "Порядок совершения обменных операций". Услуги оказываются в порядке, определенном Регламентом, положения которого прописаны в п. 5 Соглашения.</p>
+        <p>2.2. Пользователь, совершивший обменную операцию, должен провести за нее оплату.</p>
+        <br>
+        <p>3. Взаимные обязательства Сторон</p>
+        <p>3.1. Онлайн-сервис dayintrade.com берет на себя следующие обязательства:</p>
+        <p>3.1.1 Обменивать электронные криптовалюты в соответствии с правилами, оговоренными в данном соглашении.</p>
+        <p>3.1.2. Предоставлять поддержку информационного и технического характера Пользователям в ходе потребления ими оказываемых Онлайн-сервисом услуг.</p>
+        <p>3.1.3. Гарантировать конфиденциальность сведений касательно совершения обменных операций (персональную информацию клиентов, время совершения транзакции, сумму) и передавать их Пользователям, совершившим соответствующие платежи. Если в процессе обмена принимала участие анонимная система платежей, то такая операция получает статус «конфиденциальной» и не подлежит дальнейшему разглашению.</p>
+        <p>3.1.4. Ограничить доступ посторонних лиц к данным о совершении платежа.</p>
+        <p>3.1.5. Предоставлять Пользователю скидки в порядке, установленном Соглашением.</p>
+        <p>3.1.6. Обеспечить перевод средств на счет Пользователя или третьего лица не позднее суток после поступления жалобы в ситуациях, перечисленных п. п. 3.2.5, 5.4—5.6 Соглашения.</p>
+        <p>3.1.7. Хранить в тайне и не разглашать информацию по обменным операциям, а также личные данные Пользователя Интернет-сервиса третьим лицам, за исключением следующих ситуаций:</p>
+        <ul class='modal-list'>
+            <li>по законному решению суда по месту нахождения владельца Интернет-сервиса;</li>
+            <li>по законному запросу компетентных органов по месту нахождения владельца Интернет-сервиса;</li>
+        </ul>
+        <p>3.2. Пользователь берет на себя следующие обязательства:</p>
+        <p>3.2.1 Предоставлять верную личную информацию и требующиеся реквизиты для выполнения операции. Перед предоставлением необходимо убедиться в отсутствии ошибок и опечаток в этих сведениях.</p>
+        <p>3.2.2. Выполнять требования этого Соглашения.</p>
+        <p>3.2.3. Ставить в известность администрацию ресурса, если средства полностью либо частично не были зачислены на счет получателя. А также обо всех ситуациях, когда имели место обстоятельства, указанные в п. п. 5.4—5.6 этого Соглашения. Уведомление следует отправить в администрацию не позднее месяца после наступления соответствующего инцидента. Невыполнение этого требования приводит к перечислению спорных сумм на счет Онлайн-сервиса.</p>
+        <p>3.2.4. Соблюдать законы своей страны нахождения и гражданства.</p>
+        <p>3.2.5. Не нарушать требований нормативных актов, устанавливающих особенности проведения обмена в режиме онлайн.</p>
+        <p>3.3. Права онлайн-сервиса dayintrade.com:</p>
+        <p>3.3.1. На время останавливать работу сервиса для устранения неполадок и проведения модернизации.</p>
+        <p>3.3.2. Остановить проведение транзакции, если поступило обращение компетентных органов, либо на подозрение мошеннических действий. Обмен останавливается на время, необходимое для выяснения ситуации.</p>
+        <p>3.3.3. По своему усмотрению устанавливать систему скидок на обменные операции.</p>
+        <p>3.3.4. Устанавливать и изменять комиссии за проведение обмена.</p>
+        <p>3.3.5. Ограничить потенциального Пользователя в доступе к своим услугам, не объясняя мотивов отказа.</p>
+        <p>3.3.6. Если в процессе обмена совершена ошибка, то Онлайн-сервис вправе потребовать от Пользователя подтверждения совершенной операции при помощи средств связи, электронной почты, скриншота виртуального портмоне.</p>
+        <p>3.3.7. Прервать разговор с Пользователем, который неадекватно себя ведет либо, ограничивает сотрудников в получении данных, необходимых для решения его вопроса.</p>
+        <p>3.3.8. Блокировать осуществление платежа в случаях, предусмотренных п.п. 5.4—5.6 этого Соглашения либо Регламентом.</p>
+        <p>3.4. Служба безопасности сервиса в праве заморозить заявку клиента в случае, если он каким либо способом получил незаконное обогащение в данном или стороннем обменном сервисе и находится в списке должников, до выяснения причин и возмещение убытков понесенных обменниками от данного пользователя.</p>
+        <p>3.5. Обменный сервис оставляет за собой право пересмотреть условия вознаграждения в реферальной программе.</p>
+        <p>3.6. Реферальные вознаграждения не начисляются, если обменный сервис получает прибыль менее 0.6%.</p>
+        <p>3.7. Реферальные начисления можно вывести, если у пригласителя 5 и более рефералов. Также у каждого из 5 рефералов должно быть не менее одной успешной заявки.</p>
+        <p>3.8. Онлайн-сервис в праве приостановить операцию в случае выявления цели извлечения клиентом прибыли на разнице курсов обменного сервиса. В данном случае заявка блокируется до выяснения обстоятельств администрацией сервиса.</p>
+        <p>3.8.1. В случае выявления технической ошибки/сбоя в разнице отдачи курсов, обменный сервис DayInTrade оставляет за собой право приостановить обмен до выяснения.</p>
+        <p>3.8.2. В таком случае вышеизложенном в пункте 3.8.1 предоставляется возможность расчёта ошибочной заявки по верному курсу, либо осуществление возврата средств отправителю по предоставленным реквизитам.</p>
+        <p>3.8.3. Обменный сервис не несет ответственности за технические сбои т.к. - это никоим образом от него не зависит. Все претензии и жалобы в таком случае не имеют никаких обоснований.</p>
+        <p>3.9. Сервис в праве пересчитать курс, зафиксированный по заявке, в случае:</p>
+        <ul class='modal-list'>
+            <li>длительной задержки поступления средств от клиента к сервису, по причине задержки со стороны стороннего сервиса. (Более 10 минут)</li>
+            <li>клиент указал минимальную комиссию при переводе за транзакцию, что привело к длительной задержке поступления средств на счёт сервиса.</li>
+            <li>клиент не провёл оплату заявки .</li>
+            <li>разница биржевого курса на момент поступления средств составила более 0.5%</li>
+        </ul>
+        <br>
+        <p>4. Предоставляемые услуги.</p>
+        <p>4.1. dayintrade.com проводит обменные операции электронных криптовалют различных систем платежей.</p>
+        <p>4.2. Онлайн-сервис не имеет полномочий, чтобы проверять наличие прав Пользователя на средства, которые участвуют в совершении обмена.</p>
+        <br>
+        <p>5. Регламент совершения обменных операций.</p>
+        <p>5.1. Обмен начинается по факту перечисления средств от Пользователя.</p>
+        <p>5.2. Обмен считается завершенным после перечисления денег на предоставленные Клиентом реквизиты.</p>
+        <p>5.3. Пользователь не вправе отменить операцию уже после ее начала либо требовать возврата средств, переданных для обмена.</p>
+        <p>5.4. Если Пользователь перечислил сумму, величина которой не совпадает с указанной в заявке, то Онлайн-сервис вправе остановить операцию и вернуть средства клиенту.</p>
+        <p>5.5. При указании некорректного счета обмен не производится. Деньги возвращаются Пользователю по его заявлению на основании п. 3.2.5. Одновременно взимаются комиссионные, а также штраф – 2% от суммы перевода.</p>
+        <p>5.6. Если Пользователь произвел корректировку суммы платежа либо осуществил оплату с чужого аккаунта, то Онлайн-сервис вправе заблокировать такой платеж. Возврат средств происходит по заявлению Пользователя на основании п. 3.2.5. Но с Пользователя взимается комиссия и штраф в размере 1%.</p>
+        <p>5.7. Если пользователь обменника проводит обмен в направлении криптовалюты Биткоин, т.е. меняет любую из представленных в сервисе на Биткоин, то следует иметь в виду, что транзакции в сети Биткоин проходят от 15 минут до нескольких суток. Это никаким образом не зависит от обменника dayintrade.com и он не может повлиять на ситуацию или ускорить обработку транзакции.</p>
+        <p>5.9. Клиент обязуется произвести оплату по заявке в течение 15 минут, в противном случае заявка может быть удалена или пересчитана по актуальному курсу.</p>
+        <br>
+        <p>6. Ответственность Сторон и гарантии Онлайн-сервиса</p>
+        <p>6.1. Ресурс-обменник dayintrade.com не несет никакой юридической ответственности за последствия неправильного использования сервиса или за ошибки, сделанные Пользователем во время заполнения заявки для совершения обмена виртуальной валюты. Отмена платежа не проводится, даже если деньги были отправлены на неверный счет.</p>
+        <p>6.2. Онлайн-сервис не оплачивает ущерб, возникший в результате потери работоспособности оборудования в целом либо его отдельных частей, которые используются Пользователем в ходе обмена.</p>
+        <p>6.3. Онлайн-сервис не отвечает за задержки платежа либо допущенные в его процессе неточности, возникшие вследствие действий банков или систем платежей. Обменник не несет ответственности за последующие после обменной операции, возможные, блокировки банковских карт и аккаунтов платёжных систем пользователя.</p>
+        <p>6.4. dayintrade.com не отвечает за издержки и убытки Пользователя, возникшие вследствие ошибочных представлений последнего касательно тарифов, выгодности обмена либо иных субъективных моментов.</p>
+        <p>6.5. Онлайн-сервис dayintrade.com не компенсирует затраты, причиной которых стали задержки либо ошибки в процессе совершения обмена.</p>
+        <p>6.6. Пользователь подтверждает наличие законных оснований для распоряжения средствами, принимающими участие в совершении обмена.</p>
+        <p>6.7. Все убытки третьих лиц, возникшие вследствие использования ресурсов Онлайн-сервиса Пользователем, компенсируются последним в полном объеме, за счёт возврата и вычета из будущих заявок.</p>
+        <p>6.8. В случае согласия клиента на возврат средств, все расходы и комиссии взимаются с клиента в размере 2% от поступившей суммы.</p>
+        <br>
+        <p>7. Порядок изменения условий работы</p>
+        <p> 7.1. Администрация dayintrade.com вправе в любое время внести изменения или дополнения в настоящее Соглашение. Они приобретают силу и начинают действовать после их обнародования на ресурсе.</p>
+        <br>
+        <p>8. Непредвиденные обстоятельства</p>
+        <p>8.1. При возникновении непреодолимых обстоятельств Стороны освобождаются от наступления ответственности за невыполнение либо несвоевременное выполнение условий данного Соглашения. Под непреодолимыми обстоятельствами понимаются война, теракт, пожар, наводнение, беспорядки, хакерское проникновение, акты местных властей. Также к ним относится сбой в энергоснабжении и отсутствие доступа к сетям, в числе которых Интернет и услуги связи.</p>
+        <br>
+        <p>9. Порядок совершения обменных операций</p>
+        <p>9.1. Онлайн-сервис нельзя использовать для проведения незаконных операций. Пользователь дает согласие на привлечение к ответственности за попытку обмена сомнительных средств, в соответствии с нормами государства, в пределах которого совершено нарушение.</p>
+        <p>9.2. Если будет доказана незаконность платежа, то Онлайн-сервис вправе предоставить информацию об этом по требованию правоохранительных органов, системы платежей либо потерпевшей стороны.</p>
+        <p>9.3. Для совершения обмена Пользователь должен вывести со своего виртуального портмоне соответствующее количество электронных денежных знаков. При этом он лично отвечает за наличие правовых оснований для зачисления денег на кошелек, поскольку проверка законности этой операции не входит в компетенцию Онлайн-сервиса.</p>
+        <p>9.5. Онлайн-сервис не несет ответственности за платежи, выполненные по согласию Пользователя третьими лицами.</p>
+        <p>9.6. Пользователь принимает Соглашение в полном объеме путем активации кнопки «Продолжить».</p>
+        <br>    
+        <a href="#" rel="modal:close">Закрыть</a>
+      </div>
+      
+      <!-- Link to open the modal -->
+    <div class="wrapper">
+        <div class="preloader">
+            <div class="preloader__circle"></div>
+        </div>
+        <header class="header wow animate__fadeInDown">
+            <div class="container header__container">
+                <div class="header__body">
+                    <a class="header__logo header__logo-hide" href="./index.html">
+                        <img src="./assets/img/logo.png" alt="logo">
+                    </a>
+                    <div class="header__hide">
+                        <a class="header__logo" href="./index.html">
+                            <img src="./assets/img/logo.png" alt="logo">
+                        </a>
+                        <nav class="header__nav">
+                            <ul class="header__list">
+                                <li class="header__item">
+                                    <a class="header__link" href="#about">О нас</a>
+                                </li>
+                                <li class="header__item">
+                                    <a class="header__link" href="#ex1" rel="modal:open">Правила</a>
+                                </li>
+                                <li class="header__item">
+                                    <a class="header__link" href="#exchange">Обмен</a>
+                                </li>
+                                <li class="header__item">
+                                    <a class="header__link" href="#how-exchange">Как обменять</a>
+                                </li>
+                                <li class="header__item">
+                                    <a class="header__link" href="#transactions">Транзакции</a>
+                                </li>
+                                <li class="header__item">
+                                    <a class="header__link" href="#support">Поддержка</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__wrapper">
+                            <a class="header__btn" href="#exchange">
+                                Обменять
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="header__burger-content">
+                    <nav class="header__nav">
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a class="header__link" href="#about">О нас</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__link" href="#ex1" rel="modal:open">Правила</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__link" href="#exchange">Обмен</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__link" href="#how-exchange">Как обменять</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__link" href="#transactions">Транзакции</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__link" href="#support">Поддержка</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__wrapper">
+                        <a class="header__btn" href="#exchange">
+                            Обменять
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="hero__section" id="exchange">
+                <div class='hero container d-flex'>
+                    <div class='left-exchange'>
+                        <div class='hero__left'>
+                            <div class="exchange_hero d-flex">
+                                    <div class="exchange__block-title">
+                                        Заполните поля
+                                    </div>
+                                    <form class="exchange__block-form" action="#" method="post">
+                                        <div class="exchange__block-wrapper">
+                                            <div class="exchange__block-text exchange__block-text-send">
+                                                Вы отправляете <span></span>
+                                            </div>
+                                            <div class='d-flex-between'>
+                                                <div class="exchange__block-header exchange__block-header-send">
+                                                    Bitcoin (BTC)
+                                                </div>
+                                                <select id="id_select2_example" style="width: 200px;">
+                                                    <option data-img_src="./assets/img/exchangeCrypto/BTC.svg">BITCOIN (BTC)</option>
+                                                    <option data-img_src="./assets/img/exchangeCrypto/ETH.svg">ETHEREUM (ETH)</option>
+                                                    <option data-img_src="./assets/img/exchangeCrypto/BNB.svg">BINANCE COIN (BNB)</option>
+                                                    <option data-img_src="./assets/img/exchangeCrypto/FTM.svg">FANTOM (FTM)</option>
+                                                    <option data-img_src="./assets/img/exchangeCrypto/SOL.svg">SOLANA (SOL)</option>
+                                                    <option data-img_src="./assets/img/exchangeCrypto/XRP.svg">RIPPLE (XRP)</option>
+                                                    <option data-img_src="./assets/img/exchangeCrypto/XMR.svg">MONERO (XMR)</option>
+                                                    <option data-img_src="./assets/img/exchangeCrypto/TRX.svg">TRON (TRX)</option>
+                                                    <option data-img_src="./assets/img/exchangeCrypto/DASH.svg">DASH (DASH)</option>
+                                                    <option data-img_src="./assets/img/exchangeCrypto/LTC.svg">LITECOIN (LTC)</option>
+                                                    <option data-img_src="./assets/img/exchangeCrypto/VET.svg">VECHAIN (VET)</option>
+                                                    <option data-img_src="./assets/img/exchangeCrypto/XLM.svg">STELLAR (XLM)</option>
+                                                    <option data-img_src="./assets/img/exchangeCrypto/NANO.svg">NANO (NANO)</option>
+                                                    <option data-img_src="./assets/img/exchangeCrypto/DOGE.svg">DOGECOIN (DOGE)</option>
+                                                    <option data-img_src="./assets/img/exchangeCrypto/ADA.svg">CARDANO (ADA)</option>
+                                                    <option data-img_src="./assets/img/exchangeCrypto/USDT.svg">TETHER (USDT)</option>
+                                                    <option data-img_src="./assets/img/exchangeCrypto/SHIB.svg">SHIBA INU (SHIB)</option>
+                                                </select>
+                                            </div>
+                                            <input class="exchange__block-input exchange__block-input-val exchange__block-input-send" type="number" step="any" required>
+                                        </div>
+                                        <div class="exchange__block-wrapper">
+                                            <div class="exchange__block-text exchange__block-text-receive">
+                                                Вы получаете <span></span>
+                                            </div>
+                                            <div class='d-flex-between'>
+                                                <div class="exchange__block-header exchange__block-header-receive">
+                                                    Ethereum (ETH)
+                                                </div>
+                                                <select id="id_select3_example" style="width: 200px;" >
+                                                    <option data-img_src="./assets/img/exchangeCrypto/BTC.svg">BITCOIN (BTC)</option>
+                                                    <option data-img_src="./assets/img/exchangeCrypto/ETH.svg" selected="selected">ETHEREUM (ETH)</option>
+                                                    <option data-img_src="./assets/img/exchangeCrypto/BNB.svg">BINANCE COIN (BNB)</option>
+                                                    <option data-img_src="./assets/img/exchangeCrypto/FTM.svg">FANTOM (FTM)</option>
+                                                    <option data-img_src="./assets/img/exchangeCrypto/SOL.svg">SOLANA (SOL)</option>
+                                                    <option data-img_src="./assets/img/exchangeCrypto/XRP.svg">RIPPLE (XRP)</option>
+                                                    <option data-img_src="./assets/img/exchangeCrypto/XMR.svg">MONERO (XMR)</option>
+                                                    <option data-img_src="./assets/img/exchangeCrypto/TRX.svg">TRON (TRX)</option>
+                                                    <option data-img_src="./assets/img/exchangeCrypto/DASH.svg">DASH (DASH)</option>
+                                                    <option data-img_src="./assets/img/exchangeCrypto/LTC.svg">LITECOIN (LTC)</option>
+                                                    <option data-img_src="./assets/img/exchangeCrypto/VET.svg">VECHAIN (VET)</option>
+                                                    <option data-img_src="./assets/img/exchangeCrypto/XLM.svg">STELLAR (XLM)</option>
+                                                    <option data-img_src="./assets/img/exchangeCrypto/NANO.svg">NANO (NANO)</option>
+                                                    <option data-img_src="./assets/img/exchangeCrypto/DOGE.svg">DOGECOIN (DOGE)</option>
+                                                    <option data-img_src="./assets/img/exchangeCrypto/ADA.svg">CARDANO (ADA)</option>
+                                                    <option data-img_src="./assets/img/exchangeCrypto/USDT.svg">TETHER (USDT)</option>
+                                                    <option data-img_src="./assets/img/exchangeCrypto/SHIB.svg">SHIBA INU (SHIB)</option>
+                                                </select>
+                                            </div>
+                                            
+                                            <input class="exchange__block-input exchange__block-input-val exchange__block-input-receive" type="number" step="any" required>
+                                        </div>
+                                        <div class="exchange__block-wrapper">
+                                            <div class="exchange__block-text">
+                                                Адрес получателя
+                                            </div>
+                                            <input class="exchange__block-input exchange__block-input-receive-address" type="text" placeholder="Ваш адрес" required>
+                                        </div>
+                                        <div class="exchange__block-wrapper">
+                                            <div class="exchange__block-text">
+                                                Почта
+                                            </div>
+                                            <input class="exchange__block-input exchange__block-input-email" type="email" placeholder="E-mail" required>
+                                        </div>
+                                        <div class="exchange__block-wrapper checkbox">
+                                            <!-- .squaredThree -->
+                                            <div class="squaredThree">
+                                                <input class="exchange__block-input exchange__block-input checkbox" type="checkbox" id="squaredThree" novalidate required />
+                                                <label for="squaredThree"></label>
+                                            </div>
+                                            <a  class="exchange__block-text checkbox" href="#ex1" rel="modal:open">Соглашаюсь с<span class='checkbox__bold-text'> политикой конф. и правилами</span></a>
+                                        </div>
+                                        <p></p>
+                                        <div class="exchange__block-wrapper">
+                                            <div class="exchange__block-text">
+                                                Введите капчу
+                                            </div>
+                                            <div class="exchange__block-captcha">
+                                                <input class="exchange__block-input exchange__block-input-captcha exchange__block-input-captcha-first-num" readonly type="number">
+                                                <div class="exchange__block-sign">+</div>
+                                                <input class="exchange__block-input exchange__block-input-captcha exchange__block-input-captcha-second-num" readonly type="number">
+                                                <div class="exchange__block-sign">=</div>
+                                                <input class="exchange__block-input exchange__block-input-captcha exchange__block-input-captcha-sum" type="number" required>
+                                            </div>
+                                        </div>
+                                        <button class="exchange__block-btn">Продолжить</button>
+                                    </form>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero__right hero__content">
+                        <div class="hero__description">
+                            <h1 class="hero__title hero__heading seoPageHeader">
+                                Оформление заявки <br> 
+                                3 минуты
+                            </h1>
+                            <p class="hero__undertitle hero__heading">Ваш надежный <br> обменник</p>
+                        </div>
+                        <div class="hero__note hero-note d-flex">
+                            <div class="hero-note__line"></div>
+                            <div class="hero-note__text d-flex"><span>24/7</span>Техподдержка</div>
+                        </div>
+                    </div>
+                   </div>
+            </section>
+            
+            <section class="exchange" >
+                <div class="container exchange__container">
+                    <div class="exchange__text wow animate__fadeInUp" data-wow-delay=".25s">
+                        НАЧНИТЕ ОБМЕН ВСЕГО В НЕСКОЛЬКО КЛИКОВ!
+                    </div>
+                    <h3 class="title exchange__title wow animate__fadeInUp" data-wow-delay=".5s">
+                        ВЫБЕРИТЕ ПАРУ ДЛЯ ОБМЕНА
+                    </h3>
+                    <div class="exchange__wrapper wow animate__fadeInUp" data-wow-delay=".75s">
+                        <div class="exchange__block exchange__block_big">
+                            <div class="exchange__block-title">
+                                ВЫ ОТПРАВЛЯЕТЕ
+                            </div>
+                            <ul class="exchange__block-list exchange__block-list-send">
+                                <li class="exchange__block-item exchange__block-item-send exchange__block-item_active">
+                                    <img src="./assets/img/exchangeCrypto/BTC.svg" alt="BTC" data-name="Bitcoin (BTC)">
+                                </li>
+                                <li class="exchange__block-item exchange__block-item-send">
+                                    <img src="./assets/img/exchangeCrypto/ETH.svg" alt="ETH" data-name="Ethereum (ETH)">
+                                </li>
+                                <li class="exchange__block-item exchange__block-item-send">
+                                    <img src="./assets/img/exchangeCrypto/BNB.svg" alt="BNB" data-name="Binance Coin (BNB)">
+                                </li>
+                                <li class="exchange__block-item exchange__block-item-send">
+                                    <img src="./assets/img/exchangeCrypto/FTM.svg" alt="FTM" data-name="Fantom (FTM)">
+                                </li>
+                                <li class="exchange__block-item exchange__block-item-send">
+                                    <img src="./assets/img/exchangeCrypto/SOL.svg" alt="SOL" data-name="Solana (SOL)">
+                                </li>
+                                <li class="exchange__block-item exchange__block-item-send">
+                                    <img src="./assets/img/exchangeCrypto/XRP.svg" alt="XRP" data-name="Ripple (XRP)">
+                                </li>
+                                <li class="exchange__block-item exchange__block-item-send">
+                                    <img src="./assets/img/exchangeCrypto/XMR.svg" alt="XMR" data-name="Monero (XMR)">
+                                </li>
+                                <li class="exchange__block-item exchange__block-item-send">
+                                    <img src="./assets/img/exchangeCrypto/TRX.svg" alt="TRX" data-name="Tron (TRX)">
+                                </li>
+                                <li class="exchange__block-item exchange__block-item-send">
+                                    <img src="./assets/img/exchangeCrypto/DASH.svg" alt="DASH" data-name="Dash (DASH)">
+                                </li>
+                                <li class="exchange__block-item exchange__block-item-send">
+                                    <img src="./assets/img/exchangeCrypto/LTC.svg" alt="LTC" data-name="Litecoin (LTC)">
+                                </li>
+                                <li class="exchange__block-item exchange__block-item-send">
+                                    <img src="./assets/img/exchangeCrypto/VET.svg" alt="VET" data-name="VeChain (VET)">
+                                </li>
+                                <li class="exchange__block-item exchange__block-item-send">
+                                    <img src="./assets/img/exchangeCrypto/XLM.svg" alt="XLM" data-name="Stellar (XLM)">
+                                </li>
+                                <li class="exchange__block-item exchange__block-item-send">
+                                    <img src="./assets/img/exchangeCrypto/NANO.svg" alt="XNO" data-name="Nano (NANO)">
+                                </li>
+                                <li class="exchange__block-item exchange__block-item-send">
+                                    <img src="./assets/img/exchangeCrypto/DOGE.svg" alt="DOGE" data-name="Dogecoin (DOGE)">
+                                </li>
+                                <li class="exchange__block-item exchange__block-item-send">
+                                    <img src="./assets/img/exchangeCrypto/ADA.svg" alt="ADA" data-name="Cardano (ADA)">
+                                </li>
+                                <li class="exchange__block-item exchange__block-item-send">
+                                    <img src="./assets/img/exchangeCrypto/USDT.svg" alt="USDT" data-name="Tether (USDT)">
+                                </li>
+                                <li class="exchange__block-item exchange__block-item-send">
+                                    <img src="./assets/img/exchangeCrypto/SHIB.svg" alt="SHIB" data-name="Shiba Inu (SHIB)">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="exchange__block exchange__block_big">
+                            <div class="exchange__block-title">
+                                ВЫ ПОЛУЧАЕТЕ
+                            </div>
+                            <ul class="exchange__block-list exchange__block-list-receive">
+                                <li class="exchange__block-item exchange__block-item-receive">
+                                    <img src="./assets/img/exchangeCrypto/BTC.svg" alt="BTC" data-name="Bitcoin (BTC)">
+                                </li>
+                                <li class="exchange__block-item exchange__block-item-receive exchange__block-item_active">
+                                    <img src="./assets/img/exchangeCrypto/ETH.svg" alt="ETH" data-name="Ethereum (ETH)">
+                                </li>
+                                <li class="exchange__block-item exchange__block-item-receive">
+                                    <img src="./assets/img/exchangeCrypto/BNB.svg" alt="BNB" data-name="Binance Coin (BNB)">
+                                </li>
+                                <li class="exchange__block-item exchange__block-item-receive">
+                                    <img src="./assets/img/exchangeCrypto/FTM.svg" alt="FTM" data-name="Fantom (FTM)">
+                                </li>
+                                <li class="exchange__block-item exchange__block-item-receive">
+                                    <img src="./assets/img/exchangeCrypto/SOL.svg" alt="SOL" data-name="Solana (SOL)">
+                                </li>
+                                <li class="exchange__block-item exchange__block-item-receive">
+                                    <img src="./assets/img/exchangeCrypto/XRP.svg" alt="XRP" data-name="Ripple (XRP)">
+                                </li>
+                                <li class="exchange__block-item exchange__block-item-receive">
+                                    <img src="./assets/img/exchangeCrypto/XMR.svg" alt="XMR" data-name="Monero (XMR)">
+                                </li>
+                                <li class="exchange__block-item exchange__block-item-receive">
+                                    <img src="./assets/img/exchangeCrypto/TRX.svg" alt="TRX" data-name="Tron (TRX)">
+                                </li>
+                                <li class="exchange__block-item exchange__block-item-receive">
+                                    <img src="./assets/img/exchangeCrypto/DASH.svg" alt="DASH" data-name="Dash (DASH)">
+                                </li>
+                                <li class="exchange__block-item exchange__block-item-receive">
+                                    <img src="./assets/img/exchangeCrypto/LTC.svg" alt="LTC" data-name="Litecoin (LTC)">
+                                </li>
+                                <li class="exchange__block-item exchange__block-item-receive">
+                                    <img src="./assets/img/exchangeCrypto/VET.svg" alt="VET" data-name="VeChain (VET)">
+                                </li>
+                                <li class="exchange__block-item exchange__block-item-receive">
+                                    <img src="./assets/img/exchangeCrypto/XLM.svg" alt="XLM" data-name="Stellar (XLM)">
+                                </li>
+                                <li class="exchange__block-item exchange__block-item-receive">
+                                    <img src="./assets/img/exchangeCrypto/NANO.svg" alt="XNO" data-name="Nano (NANO)">
+                                </li>
+                                <li class="exchange__block-item exchange__block-item-receive">
+                                    <img src="./assets/img/exchangeCrypto/DOGE.svg" alt="DOGE" data-name="Dogecoin (DOGE)">
+                                </li>
+                                <li class="exchange__block-item exchange__block-item-receive">
+                                    <img src="./assets/img/exchangeCrypto/ADA.svg" alt="ADA" data-name="Cardano (ADA)">
+                                </li>
+                                <li class="exchange__block-item exchange__block-item-receive">
+                                    <img src="./assets/img/exchangeCrypto/USDT.svg" alt="USDT" data-name="Tether (USDT)">
+                                </li>
+                                <li class="exchange__block-item exchange__block-item-receive">
+                                    <img src="./assets/img/exchangeCrypto/SHIB.svg" alt="SHIB" data-name="Shiba Inu (SHIB)">
+                                </li>
+                            </ul>
+                        </div>
+                      
+                </div>
+            </section>
+            <section class="transactions wow animate__fadeInUp" data-wow-delay=".25s" id="transactions">
+                <div class="container transactions__container">
+                    <h3 class="transactions__title">
+                        Live transactions
+                        <div class="transactions__title-circle">
+                            <span></span>
+                        </div>
+                    </h3>
+                    <div class="transactions__table-wrapper">
+                        <table class="transactions__table">
+                            <tr class="transactions__tr-header">
+                                <th class="transactions__th">TxHash</th>
+                                <th class="transactions__th">Block</th>
+                                <th class="transactions__th">From</th>
+                                <th class="transactions__th">To</th>
+                                <th class="transactions__th">Value</th>
+                                <th class="transactions__th">Age</th>
+                            </tr>
+                            <tr class="transactions__table-content">
+
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Footer -->
+        <footer b-2l2zx82uvh="" class="footer">
+            <div b-2l2zx82uvh="" class="container">
+                <div b-2l2zx82uvh="" class="footer__top d-flex">
+                    <div b-2l2zx82uvh="" class="footer-top__item d-flex">
+                        <img b-2l2zx82uvh="" src="img/icons/clock.svg" alt="Круглосуточно" class="footer-top__icon">
+                        <div b-2l2zx82uvh="" class="footer-top__desc">
+                            <p b-2l2zx82uvh="" class="footer-top__text footer-top__text_upper">Режим работы</p>
+                            <p b-2l2zx82uvh="" class="footer-top__text footer-top__text_light">круглосуточно</p>
+                        </div>
+                    </div>
+                    <div b-2l2zx82uvh="" class="footer-top__item d-flex">
+                        <img b-2l2zx82uvh="" src="img/icons/chat.svg" alt="Чат онлайн" class="footer-top__icon">
+                        <div b-2l2zx82uvh="" class="footer-top__desc">
+                            <p b-2l2zx82uvh="" class="footer-top__text footer-top__text_upper">Круглосуточная поддержка</p>
+                            <a b-2l2zx82uvh="" href="https://t.me/kolibri24pro" class="footer-top__text footer-top__text_link">открыть чат</a>
+                        </div>
+                    </div>
+                </div>
+                <div b-2l2zx82uvh="" class="footer__bottom d-flex">
+                    <div b-2l2zx82uvh="" class="footer-bottom__item">
+                        <p b-2l2zx82uvh="" class="footer__copy">
+                            © 2021 Kolibri24. Копирование материалов только с&nbsp;разрешения
+                            правообладателя.
+                        </p>
+                    </div>
+        
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./assets/js/url.js"></script>
+    <script src="./assets/js/libs/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.js"></script>
+    <script src="./assets/js/libs/wow.min.js"></script>
+    <script src="./assets/js/libs/modal.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src='./assets/js/styles.js'></script>
+    <script type="text/javascript">
+        $('#myModal').modal({
+          backdrop: 'static',
+          keyboard: false
+        })
+    </script>
+    <script type="text/javascript">
+        function custom_template(obj){
+                var data = $(obj.element).data();
+                var text = $(obj.element).text();
+                if(data && data['img_src']){
+                    img_src = data['img_src'];
+                    template = $("<div><img src=\"" + img_src + "\" style=\"width:100%;height:45px;\"/></div>");
+                    return template;
+                }
+            }
+        var options = {
+            'templateSelection': custom_template,
+            'templateResult': custom_template,
+        }
+        $('#id_select2_example').select2(options);
+        $('#id_select3_example').select2(options);
+        $('.select2-container--default .select2-selection--single').css({'height': '100%','width' : '100%'});
+    
+    </script>
+</body>
+
+</html>

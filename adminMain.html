@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DayInTrade — AdminPanel</title>
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+    <link href="./assets/css/libs/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/libs/fonts.css">
+    <link rel="stylesheet" href="./assets/css/styleAdmin.min.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-0 py-3">
+                <div class="container-xl">
+                    <a class="navbar-brand" href="/">
+                        <img src="./assets/img/logo.png" class="h-8" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav mx-lg-auto">
+                            <a class="nav-item nav-link active" href="./adminMain.html" aria-current="page">Параметры сайта</a>
+                            <a class="nav-item nav-link" href="./adminWallets.html">Кошельки</a>
+                        </div>
+                        <div class="d-flex align-items-lg-center mt-3 mt-lg-0">
+                            <a href="./admin.html" class="btn btn-sm btn-danger w-full w-lg-auto">
+                                Выйти
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="wallets">
+            <div class="container hero__container">
+                <form id="paramsForm">
+                  
+                </form>
+            </div>
+        </section>
+    </div>
+    
+    <script src="./assets/js/url.js"></script>
+    <script src="./assets/js/libs/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/libs/bootstrap.min.js"></script>
+    <script src="./assets/js/adminMain.js"></script>
+    <script src='./assets/js/styles.js'></script>
+    <script>
+        document.querySelector('.btn.btn-sm.btn-danger.w-full.w-lg-auto').addEventListener('click', (e) => {
+            e.preventDefault();
+            document.cookie = '';
+            location = './admin.html';
+        })
+    </script>  
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+.squaredThree {
+    position: relative;
+}
+
+.squaredThree label {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #d4d4d5;
+}
+
+.squaredThree label:after {
+    content: '';
+    width: 20px;
+    height: 12px;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    border: 3px solid #000;
+    border-top: none;
+    border-right: none;
+    background: transparent;
+    opacity: 0;
+    transform: rotate(-45deg);
+}
+
+.exchange__block-input.checkbox {
+    opacity: 0;
+}
+
+.exchange__block-input.checkbox:checked + label:after {
+    opacity: 1 !important;
+    width: 62% !important;
+    height: 37% !important;
+}   
+
+.exchange__block-wrapper.checkbox {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    align-items: center;
+}
+
+.exchange__block-text.checkbox {
+    width: 80%;
+    text-decoration: underline;
+}
+
+.exchange__block-text.checkbox:hover {
+    color: #585858;
+}
+
+.checkbox__bold-text{
+    font-weight: 700;
+}
+
+.modal-list {
+    list-style: '- ';
+    padding-left: 24px;
+}
+
+.blocker {
+    top: 95px !important;
+    height: calc(100% - 95px) !important;
+}
+
+.modal {
+    max-width: 80% !important;
+}
