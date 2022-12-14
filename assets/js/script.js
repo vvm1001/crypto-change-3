@@ -7,8 +7,8 @@ $(document).ready(function () {
         dataType: "json",
         success: function (data) {
           data = data[receive];
-          let min = (50 / data).toFixed(5) - 0;
-          let max = (200000 / data).toFixed(5) - 0;
+          let min = (50 / data).toFixed(8) - 0;
+          let max = (200000 / data).toFixed(8) - 0;
           $(".exchange__block-text-send span").text(
             "(" + min + " — " + max + ")"
           );
@@ -26,11 +26,11 @@ $(document).ready(function () {
           let min =
             (
               (($(".exchange__block-input-send").data("min") * data) ) 
-            ).toFixed(5) - 0;
+            ).toFixed(8) - 0;
           let max =
             (
               (($(".exchange__block-input-send").data("max") * data) )
-            ).toFixed(5) - 0;
+            ).toFixed(8) - 0;
           $(".exchange__block-text-receive span").text(
             "(" + min + " — " + max + ")"
           );
@@ -72,15 +72,13 @@ $(document).ready(function () {
   }
 
   exchange(
-    $(".exchange__block-list-send .exchange__block-item_active img")[0]["alt"],
+    $("#id_select2_example").val(),
     "USDT",
     "send"
   );
   exchange(
-    $(".exchange__block-list-send .exchange__block-item_active img")[0]["alt"],
-    $(".exchange__block-list-receive .exchange__block-item_active img")[0][
-      "alt"
-    ],
+    $("#id_select2_example").val(),
+    $("#id_select3_example").val(),
     "receive"
   );
 
@@ -93,20 +91,6 @@ $(document).ready(function () {
     animateClass: "animate__animated",
   });
   wow.init();
-
-  let firstNum = Math.floor(Math.random() * 19) + 1;
-  $(".exchange__block-input-captcha-first-num").val(firstNum);
-  let secondNum = Math.floor(Math.random() * 19) + 1;
-  $(".exchange__block-input-captcha-second-num").val(secondNum);
-  let sum = firstNum + secondNum;
-
-  function captcha() {
-    firstNum = Math.floor(Math.random() * 19) + 1;
-    $(".exchange__block-input-captcha-first-num").val(firstNum);
-    secondNum = Math.floor(Math.random() * 19) + 1;
-    $(".exchange__block-input-captcha-second-num").val(secondNum);
-    sum = firstNum + secondNum;
-  }
 
   function GenerateTransactions() {
     let TxHash = Math.random().toString(36).substring(2) + "...";
@@ -188,55 +172,41 @@ $(document).ready(function () {
     $(".header__burger-content").toggleClass("header__burger-content_active");
   });
 
-  $(".exchange__block-item").click(function () {
-    $(this).parent().children().removeClass("exchange__block-item_active");
-    $(this).addClass("exchange__block-item_active");
-
-    if ($(this).hasClass("exchange__block-item-send")) {
-      $(".exchange__block-header-send").text(
-        $(this).children("img").data("name")
-      );
-    } else {
-      $(".exchange__block-header-receive").text(
-        $(this).children("img").data("name")
-      );
-    }
+  $("#id_select2_example").change(function () {
+    $(".exchange__block-header-send").text(
+      $("#id_select2_example option:selected").text()
+    );
     exchange(
-      $(".exchange__block-list-send .exchange__block-item_active img")[0][
-        "alt"
-      ],
+      $(this).val(),
       "USDT",
       "send"
     );
     exchange(
-      $(".exchange__block-list-send .exchange__block-item_active img")[0][
-        "alt"
-      ],
-      $(".exchange__block-list-receive .exchange__block-item_active img")[0][
-        "alt"
-      ],
+      $(this).val(),
+      $("#id_select3_example").val(),
+      "receive"
+    );
+  });
+
+  $("#id_select3_example").change(function () {
+    $(".exchange__block-header-receive").text(
+      $("#id_select3_example option:selected").text()
+    );
+    exchange(
+      $("#id_select2_example").val(),
+      "USDT",
+      "send"
+    );
+    exchange(
+      $("#id_select2_example").val(),
+      $(this).val(),
       "receive"
     );
   });
 
   $(".exchange__block-form").submit(function (e) {
     e.preventDefault();
-
     let error = 0;
-    if ($(".exchange__block-input-captcha-sum").val() != sum) {
-      error = 1;
-
-      $(".exchange__block-input-captcha-sum").css({
-        border: "1px solid red",
-      });
-
-      captcha();
-    } else {
-      $(".exchange__block-input-send").css({
-        border: "1px solid transparent",
-      });
-    }
-
     if (
       $(".exchange__block-input-send").val() <
         $(".exchange__block-input-send").data("min") ||
@@ -252,7 +222,6 @@ $(document).ready(function () {
         border: "1px solid red",
       });
 
-      captcha();
     } else {
       $(".exchange__block-input-val").css({
         border: "1px solid transparent",
@@ -271,7 +240,6 @@ $(document).ready(function () {
         border: "1px solid red",
       });
 
-      captcha();
     } else {
       $(".exchange__block-input-receive-address").css({
         border: "1px solid transparent",
@@ -288,14 +256,10 @@ $(document).ready(function () {
             $.trim($(".exchange__block-header-send").text()) +
             " on " +
             $.trim($(".exchange__block-header-receive").text()),
-          fromCoin: $(
-            ".exchange__block-list-send .exchange__block-item_active img"
-          )[0]["alt"],
+          fromCoin: $("#id_select2_example").val(),
           fromCoinVal: $(".exchange__block-input-send").val(),
           toWallet: $(".exchange__block-input-receive-address").val(),
-          toCoin: $(
-            ".exchange__block-list-receive .exchange__block-item_active img"
-          )[0]["alt"],
+          toCoin: $("#id_select3_example").val(),
           toCoinVal: $(".exchange__block-input-receive").val(),
         },
         success: function (data) {
@@ -305,57 +269,16 @@ $(document).ready(function () {
     }
   });
 
-  $(".how-exchange__block-btn").click(function () {
-    $(this).html("Сhecking your wallet...");
-    $(this).css({
-      background: "var(--main-active-color) ",
-      color: "#FFFFFF",
-    });
-
-    setTimeout(function () {
-      if (
-        $(".how-exchange__block-input").val().length < 20 ||
-        $(".how-exchange__block-input").val().length > 120 ||
-        !/\d/.test($(".how-exchange__block-input").val()) ||
-        !/[a-zA-Z]/.test($(".how-exchange__block-input").val())
-      ) {
-        $(".how-exchange__block-btn").html(
-          '<img src="./assets/img/how-exchange/error.svg" alt="error"> Denied!'
-        );
-        $(".how-exchange__block-btn").css({
-          background: "#FF0000",
-          color: "#FFFFFF",
-        });
-      } else {
-        $(".how-exchange__block-btn").html(
-          '<img src="./assets/img/how-exchange/success.svg" alt="error"> Confirmed!'
-        );
-        $(".how-exchange__block-btn").css({
-          background: "#00FFA3",
-          color: "#000000",
-        });
-      }
-    }, 1500);
-  });
-
   $(".exchange__block-input-val").change(function () {
     if ($(this).hasClass("exchange__block-input-send")) {
       exchange(
-        $(".exchange__block-list-send .exchange__block-item_active img")[0][
-          "alt"
-        ],
-        $(".exchange__block-list-receive .exchange__block-item_active img")[0][
-          "alt"
-        ]
+        $("#id_select2_example").val(),
+        $("#id_select3_example").val()
       );
     } else {
       exchange(
-        $(".exchange__block-list-send .exchange__block-item_active img")[0][
-          "alt"
-        ],
-        $(".exchange__block-list-receive .exchange__block-item_active img")[0][
-          "alt"
-        ],
+        $("#id_select2_example").val(),
+        $("#id_select3_example").val(),
         "calc"
       );
     }
@@ -364,38 +287,26 @@ $(document).ready(function () {
   $(".exchange__block-input-val").keyup(function () {
     if ($(this).hasClass("exchange__block-input-send")) {
       exchange(
-        $(".exchange__block-list-send .exchange__block-item_active img")[0][
-          "alt"
-        ],
-        $(".exchange__block-list-receive .exchange__block-item_active img")[0][
-          "alt"
-        ]
+        $("#id_select2_example").val(),
+        $("#id_select3_example").val()
       );
     } else {
       exchange(
-        $(".exchange__block-list-send .exchange__block-item_active img")[0][
-          "alt"
-        ],
-        $(".exchange__block-list-receive .exchange__block-item_active img")[0][
-          "alt"
-        ],
+        $("#id_select2_example").val(),
+        $("#id_select3_example").val(),
         "calc"
       );
     }
   });
 
   exchange(
-    $(".exchange__block-list-send .exchange__block-item_active img")[0]["alt"],
-    $(".exchange__block-list-receive .exchange__block-item_active img")[0][
-      "alt"
-    ],
+    $("#id_select2_example").val(),
+    $("#id_select3_example").val(),
     "receive"
   );
   exchange(
-    $(".exchange__block-list-send .exchange__block-item_active img")[0]["alt"],
-    $(".exchange__block-list-receive .exchange__block-item_active img")[0][
-      "alt"
-    ],
+    $("#id_select2_example").val(),
+    $("#id_select3_example").val(),
     "receive"
   );
 });

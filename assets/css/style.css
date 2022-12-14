@@ -144,9 +144,19 @@
     }
 }
 
+.exchange__block-header {
+    width: calc(100% - 201px) !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
 @media (max-width: 990px) {
     .hero__right {
         width: 100%;
+    }
+    .exchange__block-header {
+        font-size: 14px;
     }
 }
 
@@ -154,6 +164,10 @@
     .hero__right {
         width: 100%;
     }
+}
+
+.exchange-section {
+    display: none;
 }
 
 .hero__left {
@@ -203,12 +217,6 @@
     }
 }
 
-.exchange__block-header {
-    width: calc(100% - 201px) !important;
-    margin: 0 !important;
-    display: flex !important;
-    align-items: center !important;
-}
 .exchange__block-btn{
     border-radius: 3px !important;
 }

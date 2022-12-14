@@ -65,8 +65,9 @@
 }
 
 .blocker {
-    top: 95px !important;
-    height: calc(100% - 95px) !important;
+    top: 0 !important;
+    height: 100% !important;
+    z-index: 100;
 }
 
 .modal {
