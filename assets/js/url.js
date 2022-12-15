@@ -1,4 +1,4 @@
-const URL = 'https://api.dayintrade.com/';
+const URL = 'http://127.0.0.1:5000';
 
 const logos = document.querySelectorAll('.header__logo');
        

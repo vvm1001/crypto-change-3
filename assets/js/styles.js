@@ -3,10 +3,10 @@ $.ajax({
     method: 'GET',
     dataType: "json",
     success: function (data) {
-        $(':root').css('--main-bg-color', '#fff');
-        $(':root').css('--main-text-color', '#000');
-        $(':root').css('--main-active-color', '#f57444');
-        $(':root').css('--main-block-color', '#fff');
+        $(':root').css('--main-bg-color', data.bg_color);
+        $(':root').css('--main-text-color', data.text_color);
+        $(':root').css('--main-active-color', data.active_color);
+        $(':root').css('--main-block-color', data.block_color);
     },
 });
     
