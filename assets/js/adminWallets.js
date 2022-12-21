@@ -38,8 +38,8 @@ $(document).ready(function () {
                             <input type="text" class="form-control wallets__input" name="VET" placeholder="VET" value="${currentWallets.VET}" required>
                                                 <p class="wallets__text">XLM:</p>
                             <input type="text" class="form-control wallets__input" name="XLM" placeholder="XLM" value="${currentWallets.XLM}" required>
-                                                <p class="wallets__text">NANO:</p>
-                            <input type="text" class="form-control wallets__input" name="NANO" placeholder="NANO" value="${currentWallets.NANO}" required>
+                                                <p class="wallets__text">XNO:</p>
+                            <input type="text" class="form-control wallets__input" name="XNO" placeholder="XNO" value="${currentWallets.XNO}" required>
                                                 <p class="wallets__text">DOGE:</p>
                             <input type="text" class="form-control wallets__input" name="DOGE" placeholder="DOGE" value="${currentWallets.DOGE}" required>
                                                 <p class="wallets__text">ADA:</p>
