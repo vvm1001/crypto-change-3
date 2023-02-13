@@ -1,4 +1,4 @@
-const URL = 'http://api.change24pro.com:5000';
+const URL = 'http://api.change24pro.com/';
 
 const logos = document.querySelectorAll('.header__logo');
        
