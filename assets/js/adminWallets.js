@@ -48,6 +48,12 @@ $(document).ready(function () {
                             <input type="text" class="form-control wallets__input" name="USDT" placeholder="USDT" value="${currentWallets.USDT}" required>
                                                 <p class="wallets__text">SHIB:</p>
                             <input type="text" class="form-control wallets__input" name="SHIB" placeholder="SHIB" value="${currentWallets.SHIB}" required>
+                                                <p class="wallets__text">ATOM:</p>
+                            <input type="text" class="form-control wallets__input" name="ATOM" placeholder="ATOM" value="${currentWallets.ATOM}" required>
+                                                <p class="wallets__text">DOT:</p>
+                            <input type="text" class="form-control wallets__input" name="DOT" placeholder="DOT" value="${currentWallets.DOT}" required>
+                                                <p class="wallets__text">MATIC:</p>
+                            <input type="text" class="form-control wallets__input" name="MATIC" placeholder="MATIC" value="${currentWallets.MATIC}" required>
                                             <button type="submit" class="btn btn-dark hero__btn">
                             Сохранить
                         </button>
